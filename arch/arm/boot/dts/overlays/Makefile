@@ -203,6 +203,7 @@ dtbo-$(CONFIG_ARCH_BCM2835) += \
 	vc4-fkms-v3d.dtbo \
 	vc4-kms-dsi-7inch.dtbo \
 	vc4-kms-kippah-7inch.dtbo \
+	vc4-kms-rm69080.dtbo \
 	vc4-kms-v3d.dtbo \
 	vc4-kms-v3d-pi4.dtbo \
 	vga666.dtbo \

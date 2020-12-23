@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: GPL-2.0
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2711";
+};
+
+&dsi1 {
+	status = "okay";
+	port {
+		dsi_out_port: endpoint {
+			remote-endpoint = <&panel_dsi_port>;
+		};
+	};
+
+	panel@0 {
+		compatible = "kingtech,pv13900als20c";
+		reg=<0>;
+		status = "okay";
+
+		port {
+		  panel_dsi_port: endpoint {
+		    remote-endpoint = <&dsi_out_port>;
+		  };
+		};
+	};
+};
+
+&hdmi0 {
+	status = "disabled";
+};
+
+&hdmi1 {
+	status = "disabled";
+};
